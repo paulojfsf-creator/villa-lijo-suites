@@ -8,8 +8,6 @@
 
 <title>Villa Lijó Suites | Gerês</title>
 
-<meta name="description" content="Villa Lijó Suites em Rio Caldo com vista para o Gerês e albufeira da Caniçada.">
-
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -24,16 +22,19 @@
 <img src="images/logo.png">
 </div>
 
-<nav>
+<nav id="nav">
 
 <a href="#sobre">Sobre</a>
 <a href="#suites">Suites</a>
-<a href="#piscina">Piscina</a>
 <a href="#galeria">Galeria</a>
 <a href="#localizacao">Localização</a>
-<a href="#reservas" class="btn-menu">Reservar</a>
+<a href="#reservas">Reservar</a>
 
 </nav>
+
+<div id="menu-toggle">
+☰
+</div>
 
 </header>
 
@@ -41,11 +42,7 @@
 
 <section class="hero">
 
-<div class="overlay"></div>
-
 <div class="hero-content">
-
-<img src="images/logo.png" class="hero-logo">
 
 <h1>Villa Lijó Suites</h1>
 
@@ -64,9 +61,8 @@
 <h2>Sobre</h2>
 
 <p>
-O Villa Lijó Suites situa-se em Rio Caldo, no coração do Gerês.
-Dispõe de 9 suites modernas com vista para a Serra do Gerês e para a albufeira da Caniçada.
-O alojamento oferece piscina exterior, pequeno-almoço e zonas de lazer.
+O Villa Lijó Suites situa-se em Rio Caldo no coração do Gerês.
+Dispõe de 9 suites modernas, piscina exterior, pequeno-almoço e zonas de lazer.
 </p>
 
 </section>
@@ -77,7 +73,7 @@ O alojamento oferece piscina exterior, pequeno-almoço e zonas de lazer.
 
 <h2>Suites</h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
 <img src="images/suite1.jpg">
@@ -100,32 +96,16 @@ O alojamento oferece piscina exterior, pequeno-almoço e zonas de lazer.
 
 
 
-<section id="piscina" class="section">
-
-<h2>Piscina e Lazer</h2>
-
-<p>
-Relaxe na piscina exterior enquanto aprecia a vista sobre o Gerês.
-O espaço exterior foi pensado para proporcionar tranquilidade e momentos únicos na natureza.
-</p>
-
-<img src="images/piscina.jpg" class="img-large">
-
-</section>
-
-
-
 <section id="galeria" class="section">
 
 <h2>Galeria</h2>
 
 <div class="gallery">
 
-<img src="images/suite1.jpg">
-<img src="images/suite2.jpg">
-<img src="images/suite3.jpg">
-<img src="images/piscina.jpg">
-<img src="images/geres.jpg">
+<img src="images/suite1.jpg" class="gallery-img">
+<img src="images/suite2.jpg" class="gallery-img">
+<img src="images/suite3.jpg" class="gallery-img">
+<img src="images/piscina.jpg" class="gallery-img">
 
 </div>
 
@@ -156,9 +136,9 @@ src="https://maps.google.com/maps?q=rio%20caldo%20geres&t=&z=13&ie=UTF8&iwloc=&o
 
 <form>
 
-<input type="text" placeholder="Nome">
+<input placeholder="Nome">
 
-<input type="email" placeholder="Email">
+<input placeholder="Email">
 
 <input type="date">
 
@@ -176,9 +156,15 @@ src="https://maps.google.com/maps?q=rio%20caldo%20geres&t=&z=13&ie=UTF8&iwloc=&o
 
 <footer>
 
-Villa Lijó Suites • Rio Caldo • Gerês • Portugal
+Villa Lijó Suites • Gerês • Portugal
 
 </footer>
+
+
+
+<div id="lightbox">
+<img id="lightbox-img">
+</div>
 
 <script src="script.js"></script>
 
